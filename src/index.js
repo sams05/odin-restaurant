@@ -1,1 +1,5 @@
-alert('alert');
+import loadPage from './page-load';
+
+(function() {
+    loadPage();
+})();
