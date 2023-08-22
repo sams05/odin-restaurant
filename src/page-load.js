@@ -1,3 +1,5 @@
+import cafeHero from './cafe-hero.jpeg';
+
 export default function loadPage() {
     const content = document.getElementById('content');
 
@@ -23,7 +25,7 @@ export default function loadPage() {
     const h1 = document.createElement('h1');
     h1.textContent = 'Enchanted Bites Café';
     const heroImg = document.createElement('img');
-    heroImg.setAttribute('src', './cafe-hero.jpeg');
+    heroImg.setAttribute('src', cafeHero);
     heroImg.setAttribute('alt', 'café interior');
     const heroImgCap = document.createElement('div');
     heroImgCap.classList.add('caption');
