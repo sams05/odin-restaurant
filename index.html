@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,4 +10,289 @@
     <body>
         <div id="content"></div>
     </body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>@font-face {
+        font-family: 'Cedarville Cursive';
+        font-style: normal;
+        font-weight: 400;
+        src: url(file:///Users/samuelshen/repos/odin-restaurant/dist/a669593f51bb81ad0cc1.ttf);
+    }
+    
+    /* CSS Reset */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-image: url(file:///Users/samuelshen/repos/odin-restaurant/dist/ecb7201fc041dacc9301.jpeg);
+        font-family: cursive;
+        font-size: 1.5rem;
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    button {
+        /* button reset adapted from https://moderncss.dev/css-button-styling-guide/ */
+        border: none;
+        background-color: transparent;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: pointer;
+    }
+    
+    /* End CSS Reset */
+    
+    nav > ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    nav button {
+        border: 1px solid black;
+        padding: 5px 15px;
+        background-color: blue;
+        color: white;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .main {
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex: 1;
+        margin: 0 60px;
+    }
+    
+    .hero {
+        position: relative;
+    }
+    
+    .hero > h1 {
+        font-family: 'Cedarville Cursive', cursive;
+        font-size: 5rem;
+        color: white;
+        background-color: rgb(135, 135, 135, .5);
+    
+        position: absolute;
+        top: 40%;
+    
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero > img {
+        width: 100%;
+    }
+    
+    .caption {
+        color: gray;
+        font-size: 1rem;
+    
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    }
+    
+    .section {
+        padding: 15px 60px;
+        color: black;
+    }
+    
+    blockquote {
+        padding: 15px 60px;
+        width: max(60%, 600px);
+        margin: auto;
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+    
+    blockquote > p::before {
+        content: '\201C';
+    }
+    
+    blockquote > p::after {
+        content: '\201D';
+    }
+    
+    blockquote > footer {
+        text-align: right;
+    }
+    
+    .footer {
+        padding: 10px 30px;
+        background-color: green;
+        color: white;
+        font-size: 1rem;
+    }</style>
+    <style>
+        header {
+            text-align: center;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /*
+        Change original stylesheet to remove .hero from selector for .caption 
+        */
+        .caption {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .item-image {
+            width: min(500px, 75%); /* Set max width */
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+        }
+
+        img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="container">
+          <nav>
+            <ul>
+              <li><button type="button">Home</button></li>
+              <li><button type="button">Menu</button></li>
+              <li><button type="button">Contact</button></li>
+            </ul>
+          </nav>
+          <div class="main">
+            <header>
+                <h1>Menu</h1>
+            </header>
+
+            <div class="section header">
+                <h2>Main Course</h2>
+            </div>
+            <div class="section">
+                <div class="item-header">
+                    <h3>Pixie Pasta</h3>
+                    <p>$10.00</p>
+                </div>
+                <div class="item-image">
+                    <img src="pasta.jpeg" alt="pasta">
+                    <div class="caption">Photo by <a href="https://www.pexels.com/photo/pasta-with-shrimp-on-white-ceramic-plate-4518839/">Polina Tankilevitch</a></div>
+                </div>
+                <p>Delicate strands of rainbow-colored pasta served with a sauce made from the laughter of fairies.</p>
+            </div>
+            <div class="section">
+                <div class="item-header">
+                    <h3>Enchanted Forest Salad</h3>
+                    <p>$8.00</p>
+                </div>
+                <div class="item-image">
+                    <img src="salad.jpeg" alt="salad">
+                    <div class="caption">Photo by <a href="https://www.pexels.com/photo/cooked-vegetables-on-white-ceramic-plate-707251/">mustafa türkeri</a></div>
+                </div>
+                <p>A mix of crisp greens, edible flowers, and enchanted berries, served with a sparkling dewdrop dressing.</p>
+            </div>
+            <div class="section">
+                <div class="item-header">
+                    <h3>Merlin's Magical Burger</h3>
+                    <p>$8.00</p>
+                </div>
+                <div class="item-image">
+                    <img src="burger.jpeg" alt="burger">
+                    <div class="caption">Photo by <a href="https://www.pexels.com/photo/ham-burger-with-vegetables-1639557/">Valeria Boltneva</a></div>
+                </div>
+                <p>A mouthwatering blend of mythical meats and enchanted cheeses, served on a spellbound bun.</p>
+            </div>
+            <div class="section">
+                <div class="item-header">
+                    <h3>Fairy Godmother's Fondue</h3>
+                    <p>$6.50</p>
+                </div>
+                <div class="item-image">
+                    <img src="fondue.jpeg" alt="fondue">
+                    <div class="caption">Photo by <a href="https://www.pexels.com/photo/a-close-up-shot-of-a-cheese-fondue-on-the-bread-12664808/">Gonzalo Acuña</a></div>
+                </div>
+                <p>A delightful sharing experience with a pot of bubbling fondue, accompanied by enchanted dippers.</p>
+            </div>
+
+            <div class="section header">
+                <h2>Soup</h2>
+            </div>
+            <div class="section">
+                <div class="item-header">
+                    <h3>Dragon's Flame Soup</h3>
+                    <p>$5.00</p>
+                </div>
+                <div class="item-image">
+                    <img src="soup.jpeg" alt="soup">
+                    <div class="caption">Photo by <a href="https://unsplash.com/photos/5eROVOJW2bA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Dumlao</a></div>
+                </div>
+                <p>A hearty blend of roasted vegetables with a hint of fire-spiced broth, perfect for adventurers.</p>
+            </div>
+
+            <div class="section header">
+                <h2>Drinks</h2>
+            </div>
+            <div class="section">
+                <div class="item-header">
+                    <h3>Unicorn Elixir</h3>
+                    <p>$3.00</p>
+                </div>
+                <div class="item-image">
+                    <img src="drink.jpeg" alt="drink">
+                    <div class="caption">Photo by <a href="https://www.pexels.com/photo/a-glass-of-cold-coca-cola-8880727/">Ron Lach</a></div>
+                </div>
+                <p>A sparkling drink made from crushed gemstones and secret ingredients that promise a touch of enchantment.</p>
+            </div>
+
+            <div class="section header">
+                <h2>Desserts</h2>
+            </div>
+            <div class="section">
+                <div class="item-header">
+                    <h3>Spellbound Sundae</h3>
+                    <p>$5.00</p>
+                </div>
+                <div class="item-image">
+                    <img src="sundae.jpeg" alt="sundae">
+                    <div class="caption">Photo by <a href="https://www.pexels.com/photo/delicious-dessert-served-in-glass-cup-6025810/">Piotr Arnoldes</a></div>
+                </div>
+                <p>A dessert to remember, featuring layers of enchanted ice cream, bewitched toppings, and a sprinkle of stardust.</p>
+            </div>
+          </div>
+      
+          <div class="footer">Background photo by <a href="https://unsplash.com/@ymwang?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Yunming Wang</a> on <a href="https://unsplash.com/photos/YrZzP9VVN1k?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></div>
+        </div>
+      </div>
+</body>
 </html>
