@@ -9,11 +9,20 @@ export default function loadPage() {
     const nav = document.createElement('nav');
     const ul = document.createElement('ul');
     const homeTab = document.createElement('li');
-    homeTab.textContent = 'Home';
+    const homeTabBtn = document.createElement('button');
+    homeTabBtn.setAttribute('type', 'button');
+    homeTabBtn.textContent = 'Home';
+    homeTab.append(homeTabBtn);
     const menuTab = document.createElement('li');
-    menuTab.textContent = 'Menu';
+    const menuTabBtn = document.createElement('button');
+    menuTabBtn.setAttribute('type', 'button');
+    menuTabBtn.textContent = 'Menu';
+    menuTab.append(menuTabBtn);
     const contactTab = document.createElement('li');
-    contactTab.textContent = 'Contact';
+    const contactTabBtn = document.createElement('button');
+    contactTabBtn.setAttribute('type', 'button');
+    contactTabBtn.textContent = 'Contact';
+    contactTab.append(contactTabBtn);
     ul.append(homeTab, menuTab, contactTab);
     nav.append(ul);
     // Set up main

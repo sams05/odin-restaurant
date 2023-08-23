@@ -25,7 +25,34 @@ a {
     text-decoration: none;
 }
 
-/* Page Layout */
+ul {
+    list-style: none;
+}
+
+button {
+    /* button reset adapted from https://moderncss.dev/css-button-styling-guide/ */
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+/* End CSS Reset */
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav button {
+    border: 1px solid black;
+    padding: 5px 15px;
+    background-color: blue;
+    color: white;
+}
+
 .container {
     display: flex;
     flex-direction: column;
