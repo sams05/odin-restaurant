@@ -12,6 +12,7 @@
     </body>
 </html>
 -->
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -288,6 +289,225 @@
                     <div class="caption">Photo by <a href="https://www.pexels.com/photo/delicious-dessert-served-in-glass-cup-6025810/">Piotr Arnoldes</a></div>
                 </div>
                 <p>A dessert to remember, featuring layers of enchanted ice cream, bewitched toppings, and a sprinkle of stardust.</p>
+            </div>
+          </div>
+      
+          <div class="footer">Background photo by <a href="https://unsplash.com/@ymwang?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Yunming Wang</a> on <a href="https://unsplash.com/photos/YrZzP9VVN1k?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></div>
+        </div>
+      </div>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>@font-face {
+        font-family: 'Cedarville Cursive';
+        font-style: normal;
+        font-weight: 400;
+        src: url(file:///Users/samuelshen/repos/odin-restaurant/dist/a669593f51bb81ad0cc1.ttf);
+    }
+    
+    /* CSS Reset */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-image: url(file:///Users/samuelshen/repos/odin-restaurant/dist/ecb7201fc041dacc9301.jpeg);
+        font-family: cursive;
+        font-size: 1.5rem;
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    button {
+        /* button reset adapted from https://moderncss.dev/css-button-styling-guide/ */
+        border: none;
+        background-color: transparent;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: pointer;
+    }
+    
+    /* End CSS Reset */
+    
+    nav > ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    nav button {
+        border: 1px solid black;
+        padding: 5px 15px;
+        background-color: blue;
+        color: white;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .main {
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex: 1;
+        margin: 0 60px;
+    }
+    
+    .hero {
+        position: relative;
+    }
+    
+    .hero > h1 {
+        font-family: 'Cedarville Cursive', cursive;
+        font-size: 5rem;
+        color: white;
+        background-color: rgb(135, 135, 135, .5);
+    
+        position: absolute;
+        top: 40%;
+    
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero > img {
+        width: 100%;
+    }
+    
+    .caption {
+        color: gray;
+        font-size: 1rem;
+    
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    }
+    
+    .section {
+        padding: 15px 60px;
+        color: black;
+    }
+    
+    blockquote {
+        padding: 15px 60px;
+        width: max(60%, 600px);
+        margin: auto;
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+    
+    blockquote > p::before {
+        content: '\201C';
+    }
+    
+    blockquote > p::after {
+        content: '\201D';
+    }
+    
+    blockquote > footer {
+        text-align: right;
+    }
+    
+    .footer {
+        padding: 10px 30px;
+        background-color: green;
+        color: white;
+        font-size: 1rem;
+    }</style>
+    <style>
+        header {
+            text-align: center;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /*
+        Change original stylesheet to remove .hero from selector for .caption 
+        */
+        .caption {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .item-image {
+            width: min(500px, 75%); /* Set max width */
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+        }
+
+        img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+    <style>
+        .main-contact .section {
+            margin: 0 auto;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        .contact-field {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="container">
+          <nav>
+            <ul>
+              <li><button type="button">Home</button></li>
+              <li><button type="button">Menu</button></li>
+              <li><button type="button">Contact</button></li>
+            </ul>
+          </nav>
+          <div class="main main-contact">
+            <header>
+                <h1>Contact Us</h1>
+            </header>
+            <div class="section">
+                <div class="contact-field">
+                    <p class="field">Address:</p>
+                    <p class="value">123 Enchantment Lane, Fairytaleville</p>
+                </div>
+                <div class="contact-field">
+                    <p class="field">Phone:</p>
+                    <p class="value">(555) 123-4567</p>
+                </div>
+                <div class="contact-field">
+                    <p class="field">Email:</p>
+                    <p class="value">reservations@enchantedbitescafe.com</p>
+                </div>
             </div>
           </div>
       
