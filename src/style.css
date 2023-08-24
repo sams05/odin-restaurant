@@ -40,6 +40,8 @@ button {
 
 /* End CSS Reset */
 
+/* Tabs */
+
 nav > ul {
     display: flex;
     justify-content: center;
@@ -53,11 +55,15 @@ nav button {
     color: white;
 }
 
+/* End Tabs */
+
 .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
+/* Main */
 
 .main {
     background-color: rgba(255, 255, 255, 0.8);
@@ -66,6 +72,10 @@ nav button {
     gap: 15px;
     flex: 1;
     margin: 0 60px;
+}
+
+header {
+    text-align: center;
 }
 
 .hero {
@@ -89,7 +99,8 @@ nav button {
     width: 100%;
 }
 
-.hero > .caption {
+.caption {
+    background-color: rgba(255, 255, 255, 0.5);
     color: gray;
     font-size: 1rem;
 
@@ -123,9 +134,50 @@ blockquote > footer {
     text-align: right;
 }
 
+/* Used for menu item name and its pricing */
+.item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Container for menu item's picture */
+.item-image {
+    width: min(500px, 75%); /* Set max width */
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styling for .section for contact page */
+.main-contact .section {
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.contact-field {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* End Main */
+
+/* Footer */
+
 .footer {
     padding: 10px 30px;
     background-color: green;
     color: white;
     font-size: 1rem;
 }
+
+/* End Footer */
